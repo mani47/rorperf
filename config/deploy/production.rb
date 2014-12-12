@@ -1,9 +1,9 @@
 # Change these
-server '127.0.0.1', port: 22, roles: [:web, :app, :db], primary: true
+server '127.0.0.1', port: 22, user: 'mani', password: 'vesper', roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@example.com:user/app.git'
-set :application,     'appname'
-set :user,            'username'
+set :repo_url,        'git@github.com:mani47/rorperf.git'
+set :application,     'rorperf'
+set :user,            'mani47'
 set :puma_threads,    [8, 32]
 set :puma_workers,    4
 
